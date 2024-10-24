@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificación de Edad</title>
+</head>
+<body>
+    <h1>Clasificador de Edad</h1>
+    <script>
+        // Solicitar la edad del usuario
+        let edad = prompt("Por favor, ingresa tu edad:");
+
+        // Convertir la entrada a un número
+        edad = parseInt(edad);
+
+        // Verificar la edad y mostrar el mensaje correspondiente
+        if (isNaN(edad)) {
+            alert("Por favor, ingresa un número válido.");
+        } else if (edad < 13) {
+            alert("Eres un niño.");
+        } else if (edad >= 13 && edad <= 17) {
+            alert("Eres un adolescente.");
+        } else if (edad >= 18 && edad <= 64) {
+            alert("Eres un adulto.");
+        } else {
+            alert("Eres un adulto mayor.");
+        }
+    </script>
+</body>
+</html>
